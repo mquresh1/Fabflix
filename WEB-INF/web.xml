@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Project2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <resource-ref>
+	<description>
+		Resource reference to a factory for java.sql.Connection
+		instances that may be used for talking to a particular
+		database that
+		is configured in the server.xml file.
+	</description>
+	<res-ref-name>jdbc/Master</res-ref-name>
+	<res-type>javax.sql.DataSource</res-type>
+	<res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <resource-ref>
+	<description>
+		Resource reference to a factory for java.sql.Connection
+		instances that may be used for talking to a particular
+		database that
+		is configured in the server.xml file.
+	</description>
+	<res-ref-name>jdbc/Slave</res-ref-name>
+	<res-type>javax.sql.DataSource</res-type>
+	<res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ResultServlet</servlet-name>
+    <servlet-class>Result</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResultServlet</servlet-name>
+    <url-pattern>/servlet/Result</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BrowseServlet</servlet-name>
+    <servlet-class>Browse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BrowseServlet</servlet-name>
+    <url-pattern>/servlet/Browse</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MoviePageServlet</servlet-name>
+    <servlet-class>MoviePage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MoviePageServlet</servlet-name>
+    <url-pattern>/servlet/MoviePage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>StarPageServlet</servlet-name>
+    <servlet-class>StarPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StarPageServlet</servlet-name>
+    <url-pattern>/servlet/StarPage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AdvancedSearchServlet</servlet-name>
+    <servlet-class>AdvancedSearch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdvancedSearchServlet</servlet-name>
+    <url-pattern>/servlet/AdvancedSearch</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>AddCart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/servlet/AddCart</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CheckoutServlet</servlet-name>
+    <servlet-class>Checkout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckoutServlet</servlet-name>
+    <url-pattern>/servlet/Checkout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DashboardLoginServlet</servlet-name>
+    <servlet-class>DashboardLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DashboardLoginServlet</servlet-name>
+    <url-pattern>/servlet/DashboardLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DashboardServlet</servlet-name>
+    <servlet-class>Dash</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DashboardServlet</servlet-name>
+    <url-pattern>/servlet/Dash</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AutoCompleteServlet</servlet-name>
+    <servlet-class>AutoComplete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AutoCompleteServlet</servlet-name>
+    <url-pattern>/servlet/AutoComplete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PopUpServlet</servlet-name>
+    <servlet-class>PopUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PopUpServlet</servlet-name>
+    <url-pattern>/servlet/PopUp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MobileLoginServlet</servlet-name>
+    <servlet-class>MobileLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MobileLoginServlet</servlet-name>
+    <url-pattern>/servlet/MobileLogin</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>MobileSearchServlet</servlet-name>
+    <servlet-class>MobileSearch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MobileSearchServlet</servlet-name>
+    <url-pattern>/servlet/MobileSearch</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Dashboard Login Page</title>
+  <style type="text/css">
+  	body {
+  	  background-color: #00ace6
+  	}
+  
+    form {
+      text-align: center
+    }
+  </style>
+  <script>
+    function validate() {
+    	var field = 'invalid';
+    	var url = window.location.href;
+    	if(url.indexOf('?' + field + '=') != -1) {
+    		document.getElementById('errormsg').innerHTML="Incorrect login info";
+    	}
+    }
+  </script>
+</head>
+<body onload="validate()">
+  <form action="/Project2/servlet/DashboardLogin" method="post">
+	<h1>Employee Login</h1>
+	<!-- <label>Username</label><br> -->
+	<input type="text" placeholder="Email" name="email"><br><br>
+		
+	<!-- <label>Password</label><br> -->
+	<input type="password" placeholder="Password" name="pass"><br><br>
+		
+  	<input type="submit" name="action" value="Login">
+  </form>
+  <br><br><br>
+  <div id="errormsg" style="color:red; text-align:center;font-weight:bold;">  </div>
+
+</body>
+</html>

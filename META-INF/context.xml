@@ -1,0 +1,13 @@
+<Context path="/Project2">
+
+	<Resource name="jdbc/Master" auth="Container" type="javax.sql.DataSource"
+		maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="root"
+		password="alexmojulian" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://172.31.30.50:3306/moviedb?autoReconnect=true&amp;useSSL=false" />
+	
+	<Resource name="jdbc/Slave" auth="Container" type="javax.sql.DataSource"
+		maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="root"
+		password="alexmojulian" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://172.31.24.3:3306/moviedb?autoReconnect=true&amp;useSSL=false" />
+
+</Context>

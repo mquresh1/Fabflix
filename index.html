@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>FabFlix Login</title>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <style type="text/css">
+  	body {
+  	  background-color: #00ace6
+  	}
+  
+    form {
+      text-align: center
+    }
+        
+    /* Center the avatar image inside this container */
+	.imgcontainer {
+      text-align: center;
+	}
+
+	/* Logo image */
+	img.logo {
+      width: 80%;
+	}
+  </style>
+  <script>
+    function validate() {
+    	var field = 'invalid';
+    	var url = window.location.href;
+    	if(url.indexOf('?' + field + '=') != -1) {
+    		document.getElementById('errormsg').innerHTML="Incorrect login info";
+    	}
+    }
+  </script>
+</head>
+<body onload="validate()">
+  <form action="/Project2/servlet/Login" method="post">
+    <div class="imgcontainer">
+      <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+	
+	<!-- <label>Username</label><br> -->
+	<input type="text" placeholder="Email" name="email"><br><br>
+		
+	<!-- <label>Password</label><br> -->
+	<input type="password" placeholder="Password" name="pass"><br><br>
+		
+  	<input type="submit" name="action" value="Login">
+  	<!-- <div class="g-recaptcha" data-sitekey="6Lex3iAUAAAAABC0xHqc2EUvEkciCEIg02Jn6Cnh"></div> -->
+  </form>
+  <br><br><br>
+  <div id="errormsg" style="color:red; text-align:center;font-weight:bold;">  </div>
+
+</body>
+</html>

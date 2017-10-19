@@ -1,0 +1,258 @@
+@CHARSET "UTF-8";
+html,
+body,
+object {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #00ace6
+}
+
+/*
+div {
+  margin: 0px;
+  padding: 0px;
+}
+*/
+
+table, td{    
+  border: 2px solid #0000A0;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 25px;
+  background-color:black;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+img {
+  width: 100px;
+  height: 150px;
+}
+
+#movie_img {
+	text-align: center;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#navbar {
+  position: relative;
+  z-index: 1;
+  height: 10%;
+  width: 100%;
+}
+
+#bottom {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+}
+
+/*NAVBAR STYLE*/
+#navbarsearchinput {
+  width: 50%;
+  height: 80%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 7px 0px 7px 0px;
+  margin: 5px 5px;
+  text-align: center;
+}
+
+#navbarsearchinput:focus {
+  border: 3px solid #555;
+}
+
+#navbarsubmit {
+  font-size: 16px;
+}
+
+#navbarlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbarli {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+#navbarlink {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right:1px solid #bbb;
+}
+
+#navbarlink:hover:not(.active) {
+  background-color: white;
+  color: black;
+}
+
+#navbarselect {
+  font-size: 16px;
+}
+
+/* ADVANCED SEARCH STYLE */
+#searchformfields {
+	text-align: left;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+#searchformfields:focus {
+  border: 5px solid white;
+}
+
+#searchformsubmit {
+    width: 25%;
+    background-color: #137e96;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchformsubmit:hover {
+    background-color: #606b6d;
+    border:2px solid white;
+}
+
+#searchformdiv {
+    border-radius: 15px;
+    background-color: black;
+    padding: 20px;
+  	margin: 5% auto auto auto;
+}
+
+label {
+	color: white;
+}
+
+/* CHECKOUT STYLE */
+#creditcardfields{
+	text-align: left;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+#creditcardfields:focus{
+  border: 5px solid white;
+}
+
+#creditcardsubmit {
+    width: 25%;
+    background-color: #137e96;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#creditcardsubmit:hover {
+    background-color: #606b6d;
+    border:2px solid white;
+}
+
+#creditcarddiv{
+	width: 35%;
+    border-radius: 15px;
+    background-color: black;
+    padding: 20px;
+  	margin: 5% auto auto auto;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    float:right;
+}
+
+#cartdisplaydiv{
+	width:50%;
+	border-radius: 15px;
+    background-color: black;
+    padding: 20px;
+  	margin: 5% auto auto auto;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    float:left;
+}
+
+#checkouttable{
+	table-layout:fixed;
+    width:100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+	border: 2px solid #0000A0;
+  text-align: left;
+}
+
+#tablecellformat {
+  padding: 25px;
+  background-color:black;
+  color: white;
+  border: 2px solid #0000A0;
+  text-align: left;
+}
+
+.popupdiv {
+	border: 2px solid white;
+	background-color:black;
+	color: white;
+	display: none;
+	position:absolute;
+	width:500px;
+    height:300px;
+}
+#popup {
+	border: 2px solid white;
+	background-color:black;
+	color: white;
+	width:500px;
+    height:300px;
+}
+
