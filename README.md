@@ -15,8 +15,7 @@ Note: Fabflix is not an actual business but the website has these features imple
 * Quick view for convenience
 
 ## Demo
-Unfortunately, the site is not accessible as it is no longer being hosted. However, below you can find images demonstrating the look and features
-provided on the website.
+Unfortunately, the site is not accessible as it is no longer being hosted. However, below you can find images demonstrating the look and features provided on the website.
 
 ### Login
 <img style="text-align:center" src="/images/login.png"></img>
@@ -47,7 +46,7 @@ After the user has added movies of interest to their cart, they can proceed to t
   * Java Servlets - Middleware
   * JDBC - API for calls to backend
 * [MySQL](https://www.mysql.com/) - Database management
-* [Apache Tomcat](http://tomcat.apache.org/) - For deploment
+* [Apache Tomcat](http://tomcat.apache.org/) - For deployment
 * [AWS](https://aws.amazon.com/) - For hosting
 
 ## Authors
